@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style Haven | Couture Fashion</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat', sans-serif;
+    background:#0f0f0f;
+    color:white;
+}
+
+/* NAV */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    position:fixed;
+    width:100%;
+    background:rgba(0,0,0,0.8);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav h2{
+    font-family:'Playfair Display', serif;
+    font-size:26px;
+    letter-spacing:2px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('look1.jpg') center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    position:relative;
+}
+
+.hero::after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero h1{
+    font-family:'Playfair Display', serif;
+    font-size:60px;
+    letter-spacing:3px;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:18px;
+    opacity:0.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 35px;
+    background:#d4af37;
+    color:black;
+    text-decoration:none;
+    font-weight:600;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* ABOUT */
+section{
+    padding:100px 8%;
+}
+
+.about{
+    text-align:center;
+}
+
+.about h2{
+    font-family:'Playfair Display', serif;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    opacity:0.85;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+}
+
+.contact h2{
+    font-family:'Playfair Display', serif;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+.contact a{
+    color:#d4af37;
+    text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    background:#000;
+    margin-top:50px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Style Haven</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Collection</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <div class="hero-content">
+        <h1>Style Haven</h1>
+        <p>Luxury Couture Dresses for Bold & Elegant Women</p>
+        <a href="#contact" class="btn">Book a Consultation</a>
+    </div>
+</div>
+
+<section id="about" class="about">
+    <h2>About the Brand</h2>
+    <p>
+        Style Haven is a couture fashion house dedicated to timeless elegance,
+        modern African influence, and bold femininity. Each piece is crafted
+        with precision, luxury fabrics, and attention to detail —
+        designed to make every woman feel powerful, confident, and unforgettable.
+    </p>
+</section>
+
+<section id="gallery">
+    <h2 style="text-align:center; font-family:'Playfair Display', serif; margin-bottom:40px;">Our Collection</h2>
+    <div class="gallery">
+        <img src="look1.jpg">
+        <img src="look2.jpg">
+        <img src="look3.jpg">
+        <img src="look4.jpg">
+        <img src="look5.jpg">
+        <img src="look6.jpg">
+        <img src="look7.jpg">
+        <img src="look8.jpg">
+        <img src="look9.jpg">
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Style Haven</h2>
+    <p>📞 07080818446</p>
+    <p>📍 Nigeria</p>
+    <p>Instagram: <a href="https://instagram.com/Youluvbammy" target="_blank">@Youluvbammy</a></p>
+</section>
+
+<footer>
+    <p>© 2026 Style Haven Couture. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
